@@ -38,4 +38,5 @@ do
         fi
         done
 done
-echo "Numbers in descending order are ${comp[@]}"
+echo "Numbers in ascending order are ${comp[@]}"
+
