@@ -26,3 +26,16 @@ do
         done
 done
 echo "Numbers in descending order are ${comp[@]}"
+for((i=0;i<4;++i))
+do
+        for((j=(($i+1));j<4;++j))
+        do
+        if [ ${comp[$i]} -gt ${comp[$j]} ]
+        then
+        temp=${comp[$i]}
+        comp[i]=${comp[$j]}
+        comp[j]=$temp
+        fi
+        done
+done
+echo "Numbers in descending order are ${comp[@]}"
