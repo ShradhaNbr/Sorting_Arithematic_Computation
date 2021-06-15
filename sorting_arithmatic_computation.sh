@@ -8,4 +8,4 @@ computation[result1]="$(($a*$b+$c))"
 computation[result2]="$(($c+$a/$b))"
 computation[result3]="$(($a%$b+$c))"
 echo ${computation[@]}
-echo ${#computation[@]}
+
